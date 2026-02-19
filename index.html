@@ -66,27 +66,30 @@
         <!-- ── Highlights ── -->
         <section class="highlights">
             <div class="highlight-card">
-                <div class="highlight-photo">
+                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/damtsifebuli-mtis-qveli-4-6-tvis-itemid-6932dd1557426151e0bac82b"
+                    target="_blank" class="highlight-photo">
                     <img src="img/post3.jpg" alt="Aged Cheeses">
-                </div>
+                </a>
                 <h3 data-en="Aged Cheeses" data-ka="დამწიფებული ყველი">Aged Cheeses</h3>
                 <p data-en="Mountain cheeses aged 4–12 months with deep, complex flavour."
                     data-ka="მთის ყველი, 4–12 თვით დამწიფებული, მდიდარი, ღრმა გემოთი.">Mountain cheeses aged 4–12
                     months with deep, complex flavour.</p>
             </div>
             <div class="highlight-card">
-                <div class="highlight-photo">
+                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/qvelis-dafa-4-personaze-itemid-6811c26e18dad4ee26a8c98f"
+                    target="_blank" class="highlight-photo">
                     <img src="img/post2.jpg" alt="Artisan Boards">
-                </div>
+                </a>
                 <h3 data-en="Artisan Boards" data-ka="ხელოვნური დაფები">Artisan Boards</h3>
                 <p data-en="Curated cheese boards with seasonal accompaniments for 2–4 guests."
                     data-ka="შერჩეული სეზონური დამატებებით ყველის დაფები 2–4 სტუმრისთვის.">Curated cheese boards with
                     seasonal accompaniments for 2–4 guests.</p>
             </div>
             <div class="highlight-card">
-                <div class="highlight-photo">
+                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/sulguni-dmanisuri-500gr-itemid-68eeb033844d08c329eedfea"
+                    target="_blank" class="highlight-photo">
                     <img src="img/post6.jpg" alt="Fresh Dairy">
-                </div>
+                </a>
                 <h3 data-en="Fresh Dairy" data-ka="სუფრის ყოველდღიური">Fresh Dairy</h3>
                 <p data-en="Sulguni, Imeruli, and fresh dairy from the Swiss Agricultural School Caucasus."
                     data-ka="სულგუნი, იმერული და ახალი რძის პროდუქტები შვეიცარიის სოფლის მეურნეობის სკოლის კავკასიიდან.">
@@ -232,7 +235,7 @@
         const langBtn = document.getElementById('lang-toggle');
         const elements = document.querySelectorAll('[data-en]');
 
-        let currentLang = localStorage.getItem('lang-margaliti') || 'en';
+        let currentLang = localStorage.getItem('lang-margaliti') || 'ka';
 
         function updateLanguage() {
             langBtn.textContent = currentLang === 'en' ? '🇬🇪' : '🇺🇸';
