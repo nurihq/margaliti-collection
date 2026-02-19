@@ -4,243 +4,338 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CZ4XQ6868"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6CZ4XQ6868');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-6CZ4XQ6868');</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margaliti Collection | Cheese Bar & More · Tbilisi</title>
     <meta name="description"
         content="Margaliti Collection — Tbilisi's boutique Cheese Bar & More. Aged mountain cheeses, artisan boards, fresh dairy. Order on Wolt, Glovo or Bolt Food.">
-    <meta property="og:title" content="Margaliti Collection | Cheese Bar & More">
-    <meta property="og:description"
-        content="Georgia's finest aged cheeses, proudly crafted. Tbilisi's premier cheese destination.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Language Toggle -->
-    <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">🇬🇪</button>
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
 
-    <!-- Ambient background -->
-    <div class="ambient-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <a class="nav-logo" href="#">Margaliti</a>
+        <div class="nav-right">
+            <a href="#picks" class="nav-link" data-en="Menu" data-ka="მენიუ">Menu</a>
+            <a href="#order" class="nav-link" data-en="Order" data-ka="შეკვეთა">Order</a>
+            <button id="lang-btn" class="lang-pill">
+                <span class="lang-flag">🇬🇪</span>
+                <span id="lang-label">KA</span>
+            </button>
+        </div>
+    </nav>
 
-    <main class="container">
-
-        <!-- ── Hero ── -->
-        <header class="hero">
-            <div class="hero-eyebrow" data-en="Tbilisi, Georgia · Est. 2024" data-ka="თბილისი, საქართველო · დაარ. 2024">
-                Tbilisi, Georgia · Est. 2024</div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-media">
+            <img src="img/post2.jpg" alt="Margaliti cheese board" class="hero-img" id="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-origin" data-en="Tbilisi · Georgia · Est. 2024" data-ka="თბილისი · საქართველო · 2024">Tbilisi
+                · Georgia · Est. 2024</p>
             <h1 class="hero-title">
-                <span class="title-main">Margaliti</span>
-                <span class="title-sub" data-en="Collection" data-ka="კოლექცია">Collection</span>
+                <span class="ht-serif" data-en="The" data-ka="">The</span>
+                <span class="ht-big" data-en="Cheese" data-ka="ყველის">Cheese</span>
+                <em class="ht-italic" data-en="Collection" data-ka="კოლექცია">Collection</em>
             </h1>
-            <p class="hero-badge" data-en="Cheese Bar & More" data-ka="ყველის ბარი &amp; სხვა">Cheese Bar &amp; More</p>
-            <p class="hero-tagline" data-en="Georgia's finest aged cheeses, proudly crafted."
-                data-ka="საქართველოს საუკეთესო დამწიფებული ყველი, სიამაყით შექმნილი.">Georgia's finest aged cheeses,
-                proudly crafted.</p>
+            <p class="hero-desc"
+                data-en="Georgia's finest aged cheeses &amp; artisan dairy — straight from mountain pasture to your table."
+                data-ka="საქართველოს საუკეთესო დამწიფებული ყველი — მთის საძოვრიდან თქვენს სუფრამდე.">Georgia's finest
+                aged cheeses &amp; artisan dairy — straight from mountain pasture to your table.</p>
             <div class="hero-actions">
-                <a href="#order" class="btn btn-primary" data-en="Order Now" data-ka="შეუკვეთე ახლა">Order Now</a>
-                <a href="#picks" class="btn btn-ghost" data-en="Our Cheeses" data-ka="ჩვენი ყველი">Our Cheeses</a>
-            </div>
-        </header>
-
-        <!-- ── Highlights ── -->
-        <section class="highlights">
-            <div class="highlight-card">
-                <div class="highlight-icon">🧀</div>
-                <h3 data-en="Aged Cheeses" data-ka="დამწიფებული ყველი">Aged Cheeses</h3>
-                <p data-en="Mountain cheeses aged 4–12 months with deep, complex flavour."
-                    data-ka="მთის ყველი, 4–12 თვით დამწიფებული, მდიდარი, ღრმა გემოთი.">Mountain cheeses aged 4–12
-                    months with deep, complex flavour.</p>
-            </div>
-            <div class="highlight-card">
-                <div class="highlight-icon">🪵</div>
-                <h3 data-en="Artisan Boards" data-ka="ხელოვნური დაფები">Artisan Boards</h3>
-                <p data-en="Curated cheese boards with seasonal accompaniments for 2–4 guests."
-                    data-ka="შერჩეული სეზონური დამატებებით ყველის დაფები 2–4 სტუმრისთვის.">Curated cheese boards with
-                    seasonal accompaniments for 2–4 guests.</p>
-            </div>
-            <div class="highlight-card">
-                <div class="highlight-icon">🥛</div>
-                <h3 data-en="Fresh Dairy" data-ka="სუფრის ყოველდღიური">Fresh Dairy</h3>
-                <p data-en="Sulguni, Imeruli, and fresh dairy from the Swiss Agricultural School Caucasus."
-                    data-ka="სულგუნი, იმერული და ახალი რძის პროდუქტები შვეიცარიის სოფლის მეურნეობის სკოლის კავკასიიდან.">
-                    Sulguni, Imeruli, and fresh dairy from the Swiss Agricultural School Caucasus.</p>
-            </div>
-        </section>
-
-        <!-- ── Popular Picks ── -->
-        <section class="picks" id="picks">
-            <h2 class="section-title" data-en="Popular Picks" data-ka="პოპულარული პროდუქტები">Popular Picks</h2>
-            <p class="section-sub" data-en="Tap any item to order directly on Wolt."
-                data-ka="დააჭირე ნებისმიერ პროდუქტს Wolt-ზე შესაკვეთად.">Tap any item to order directly on Wolt.</p>
-
-            <div class="picks-grid">
-                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/damtsifebuli-mtis-qveli-4-6-tvis-itemid-6932dd1557426151e0bac82b"
-                    target="_blank" class="pick-card">
-                    <div class="pick-emoji">🏔️</div>
-                    <div class="pick-body">
-                        <h3 data-en="Aged Mountain Cheese" data-ka="დამწიფებული მთის ყველი">Aged Mountain Cheese</h3>
-                        <p class="pick-note" data-en="4–6 months aged · rich &amp; earthy"
-                            data-ka="4–6 თვე · მდიდარი და ბუნებრივი">4–6 months aged · rich &amp; earthy</p>
-                    </div>
-                    <div class="pick-arrow">↗</div>
-                </a>
-
-                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/qvelis-dafa-4-personaze-itemid-6811c26e18dad4ee26a8c98f"
-                    target="_blank" class="pick-card pick-card--featured">
-                    <div class="pick-emoji">🪵</div>
-                    <div class="pick-body">
-                        <h3 data-en="Cheese Board for 4" data-ka="ყველის დაფა 4 პერსონაზე">Cheese Board for 4</h3>
-                        <p class="pick-note" data-en="Mixed cheeses, nuts, honey &amp; seasonal fruit"
-                            data-ka="შერეული ყველი, თხილი, თაფლი &amp; სეზონური ხილი">Mixed cheeses, nuts, honey
-                            &amp; seasonal fruit</p>
-                    </div>
-                    <div class="pick-arrow">↗</div>
-                </a>
-
-                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/sulguni-dmanisuri-500gr-itemid-68eeb033844d08c329eedfea"
-                    target="_blank" class="pick-card">
-                    <div class="pick-emoji">🥛</div>
-                    <div class="pick-body">
-                        <h3 data-en="Sulguni, Dmanisi" data-ka="სულგუნი, დმანისური">Sulguni, Dmanisi</h3>
-                        <p class="pick-note" data-en="500g · classic Georgian melting cheese"
-                            data-ka="500გ · კლასიკური ქართული სულგუნი">500g · classic Georgian melting cheese</p>
-                    </div>
-                    <div class="pick-arrow">↗</div>
-                </a>
-
-                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/kamemberi-itemid-6811c26e18dad4ee26a8c99d"
-                    target="_blank" class="pick-card">
-                    <div class="pick-emoji">🎱</div>
-                    <div class="pick-body">
-                        <h3 data-en="Camembert" data-ka="კამემბერი">Camembert</h3>
-                        <p class="pick-note" data-en="Creamy centre, bloomy white rind"
-                            data-ka="კრემისებური, თეთრი ყველი">Creamy centre, bloomy white rind</p>
-                    </div>
-                    <div class="pick-arrow">↗</div>
-                </a>
-
-                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/dmanisuri-chizkeiki-1ts-itemid-6811c26e18dad4ee26a8c933"
-                    target="_blank" class="pick-card">
-                    <div class="pick-emoji">🍰</div>
-                    <div class="pick-body">
-                        <h3 data-en="Dmanisi Cheesecake" data-ka="დმანისური ჩიზქეიქი">Dmanisi Cheesecake</h3>
-                        <p class="pick-note" data-en="Signature dessert with local Georgian cheese"
-                            data-ka="სიგნატური დესერტი ქართული ყველით">Signature dessert with local Georgian cheese
-                        </p>
-                    </div>
-                    <div class="pick-arrow">↗</div>
-                </a>
-            </div>
-        </section>
-
-        <!-- ── Order Online ── -->
-        <section class="order" id="order">
-            <h2 class="section-title" data-en="Order Online" data-ka="შეუკვეთე ონლაინ">Order Online</h2>
-            <p class="section-sub" data-en="Fast delivery across Tbilisi on your favourite platform."
-                data-ka="სწრაფი მიტანა მთელ თბილისში თქვენი საყვარელი პლატფორმით.">Fast delivery across Tbilisi on
-                your favourite platform.</p>
-
-            <div class="order-grid">
                 <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection" target="_blank"
-                    class="order-btn order-btn--wolt">
-                    <span class="order-icon">🛵</span>
-                    <span class="order-text" data-en="Order on Wolt" data-ka="შეუკვეთე Wolt-ზე">Order on Wolt</span>
+                    class="btn-primary" data-en="Order on Wolt" data-ka="შეკვეთე Wolt-ზე">Order on Wolt</a>
+                <a href="#picks" class="btn-ghost" data-en="See the Menu" data-ka="ნახე მენიუ">See the Menu</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-line"></span>
+            <span class="scroll-text" data-en="scroll" data-ka="scroll">scroll</span>
+        </div>
+    </section>
+
+    <!-- TAGLINE BAND -->
+    <section class="tagline-band">
+        <div class="marquee-wrap">
+            <div class="marquee-track">
+                <span>Aged Mountain Cheese</span><span class="dot">·</span>
+                <span>Artisan Boards</span><span class="dot">·</span>
+                <span>Fresh Dairy</span><span class="dot">·</span>
+                <span>Georgian Craft</span><span class="dot">·</span>
+                <span>Wolt Delivery</span><span class="dot">·</span>
+                <span>Tbilisi</span><span class="dot">·</span>
+                <span>Aged Mountain Cheese</span><span class="dot">·</span>
+                <span>Artisan Boards</span><span class="dot">·</span>
+                <span>Fresh Dairy</span><span class="dot">·</span>
+                <span>Georgian Craft</span><span class="dot">·</span>
+                <span>Wolt Delivery</span><span class="dot">·</span>
+                <span>Tbilisi</span><span class="dot">·</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY + PHOTO SPLIT -->
+    <section class="story">
+        <div class="story-photo">
+            <img src="img/post3.jpg" alt="Inside Margaliti Collection" loading="lazy">
+            <div class="story-photo-tag" data-en="Est. 2024" data-ka="2024">Est. 2024</div>
+        </div>
+        <div class="story-text">
+            <p class="section-label" data-en="Our Story" data-ka="ჩვენ შესახებ">Our Story</p>
+            <h2 data-en="Born from a love<br>of great cheese." data-ka="შექმნილია ყველის<br>სიყვარულით.">Born from a
+                love<br>of great cheese.</h2>
+            <p class="story-body"
+                data-en="Margaliti Collection is Tbilisi's boutique Cheese Bar & More. We source mountain-aged wheels, fresh Sulguni, and creamy Camembert — all made with milk from the Swiss Agricultural School Caucasus."
+                data-ka="მარგალიტი კოლექცია — თბილისის ბუტიკ ყველის ბარი. ჩვენ ვიტანთ მთის ყველს, ახალ სულგუნსა და კრემისებურ კამემბერს შვეიცარიის სოფ. სკოლის კავკასიური რძისგან.">
+                Margaliti Collection is Tbilisi's boutique Cheese Bar & More. We source mountain-aged wheels, fresh
+                Sulguni, and creamy Camembert — all made with milk from the Swiss Agricultural School Caucasus.</p>
+            <div class="story-stats">
+                <div class="stat"><span class="stat-n">4–12</span><span class="stat-l" data-en="months aged"
+                        data-ka="თვე დამწიფება">months aged</span></div>
+                <div class="stat"><span class="stat-n">10+</span><span class="stat-l" data-en="cheese varieties"
+                        data-ka="სახეობა">cheese varieties</span></div>
+                <div class="stat"><span class="stat-n">3</span><span class="stat-l" data-en="delivery platforms"
+                        data-ka="პლატფორმა">delivery platforms</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PICKS GRID -->
+    <section class="picks" id="picks">
+        <div class="picks-header">
+            <p class="section-label" data-en="The Menu" data-ka="მენიუ">The Menu</p>
+            <h2 data-en="Popular Picks" data-ka="პოპულარული">Popular Picks</h2>
+        </div>
+
+        <div class="picks-grid">
+            <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/qvelis-dafa-4-personaze-itemid-6811c26e18dad4ee26a8c98f"
+                target="_blank" class="pick pick--large">
+                <div class="pick-img-wrap">
+                    <img src="img/post2.jpg" alt="Cheese Board for 4" loading="lazy">
+                    <div class="pick-overlay"></div>
+                </div>
+                <div class="pick-body">
+                    <span class="pick-tag" data-en="Most Popular" data-ka="ყველაზე პოპ.">Most Popular</span>
+                    <h3 data-en="Cheese Board for 4" data-ka="ყველის დაფა 4-ზე">Cheese Board for 4</h3>
+                    <p data-en="Mixed cheeses, nuts, honey & seasonal fruit"
+                        data-ka="შერეული ყველი, თხილი, თაფლი, ხილი">Mixed cheeses, nuts, honey & seasonal fruit</p>
+                    <span class="pick-cta" data-en="Order on Wolt ↗" data-ka="Wolt-ზე ↗">Order on Wolt ↗</span>
+                </div>
+            </a>
+
+            <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/damtsifebuli-mtis-qveli-4-6-tvis-itemid-6932dd1557426151e0bac82b"
+                target="_blank" class="pick">
+                <div class="pick-img-wrap">
+                    <img src="img/post4.jpg" alt="Aged Mountain Cheese" loading="lazy">
+                    <div class="pick-overlay"></div>
+                </div>
+                <div class="pick-body">
+                    <h3 data-en="Aged Mountain Cheese" data-ka="დამწიფებული ყველი">Aged Mountain Cheese</h3>
+                    <p data-en="4–6 months · rich & earthy" data-ka="4–6 თვე · ღრმა გემო">4–6 months · rich & earthy</p>
+                    <span class="pick-cta" data-en="Order ↗" data-ka="შეკვეთა ↗">Order ↗</span>
+                </div>
+            </a>
+
+            <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/sulguni-dmanisuri-500gr-itemid-68eeb033844d08c329eedfea"
+                target="_blank" class="pick">
+                <div class="pick-img-wrap">
+                    <img src="img/post1.jpg" alt="Sulguni Dmanisi" loading="lazy">
+                    <div class="pick-overlay"></div>
+                </div>
+                <div class="pick-body">
+                    <h3 data-en="Sulguni, Dmanisi" data-ka="სულგუნი დმანისური">Sulguni, Dmanisi</h3>
+                    <p data-en="500g · classic Georgian melting cheese" data-ka="500გ · კლასიკური ქართული">500g ·
+                        classic Georgian melting cheese</p>
+                    <span class="pick-cta" data-en="Order ↗" data-ka="შეკვეთა ↗">Order ↗</span>
+                </div>
+            </a>
+
+            <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/kamemberi-itemid-6811c26e18dad4ee26a8c99d"
+                target="_blank" class="pick">
+                <div class="pick-img-wrap">
+                    <img src="img/post7.jpg" alt="Camembert" loading="lazy">
+                    <div class="pick-overlay"></div>
+                </div>
+                <div class="pick-body">
+                    <h3 data-en="Camembert" data-ka="კამემბერი">Camembert</h3>
+                    <p data-en="Creamy centre, bloomy white rind" data-ka="კრემისებური, თეთრი ყველი">Creamy centre,
+                        bloomy white rind</p>
+                    <span class="pick-cta" data-en="Order ↗" data-ka="შეკვეთა ↗">Order ↗</span>
+                </div>
+            </a>
+
+            <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection/dmanisuri-chizkeiki-1ts-itemid-6811c26e18dad4ee26a8c933"
+                target="_blank" class="pick pick--wide">
+                <div class="pick-img-wrap">
+                    <img src="img/post8.jpg" alt="Dmanisi Cheesecake" loading="lazy">
+                    <div class="pick-overlay"></div>
+                </div>
+                <div class="pick-body">
+                    <h3 data-en="Dmanisi Cheesecake" data-ka="დმანისური ჩიზქეიქი">Dmanisi Cheesecake</h3>
+                    <p data-en="Signature dessert with local Georgian cheese"
+                        data-ka="სიგნატური დესერტი ქართული ყველით">Signature dessert with local Georgian cheese</p>
+                    <span class="pick-cta" data-en="Order on Wolt ↗" data-ka="Wolt-ზე ↗">Order on Wolt ↗</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="picks-footer">
+            <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection" target="_blank"
+                class="btn-outline" data-en="View Full Menu on Wolt ↗" data-ka="სრული მენიუ Wolt-ზე ↗">View Full Menu on
+                Wolt ↗</a>
+        </div>
+    </section>
+
+    <!-- ORDER SECTION -->
+    <section class="order" id="order">
+        <div class="order-bg">
+            <img src="img/post3.jpg" alt="" aria-hidden="true">
+            <div class="order-bg-overlay"></div>
+        </div>
+        <div class="order-content">
+            <p class="section-label light" data-en="Delivery" data-ka="მიტანა">Delivery</p>
+            <h2 data-en="Order Online" data-ka="შეუკვეთე">Order Online</h2>
+            <p data-en="Fast delivery across Tbilisi. Pick your platform:" data-ka="სწრაფი მიტანა მთელ თბილისში:">Fast
+                delivery across Tbilisi. Pick your platform:</p>
+            <div class="platforms">
+                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection" target="_blank"
+                    class="platform">
+                    <span class="platform-name">Wolt</span>
+                    <span class="platform-arrow">↗</span>
                 </a>
                 <a href="https://glovoapp.com/ge/en/tbilisi/margaliti-collection-tbilisi/" target="_blank"
-                    class="order-btn order-btn--glovo">
-                    <span class="order-icon">🟡</span>
-                    <span class="order-text" data-en="Order on Glovo" data-ka="შეუკვეთე Glovo-ზე">Order on Glovo</span>
+                    class="platform">
+                    <span class="platform-name">Glovo</span>
+                    <span class="platform-arrow">↗</span>
                 </a>
-                <a href="https://food.bolt.eu/en-GE" target="_blank" class="order-btn order-btn--bolt">
-                    <span class="order-icon">⚡</span>
-                    <span class="order-text" data-en="Order on Bolt Food" data-ka="შეუკვეთე Bolt Food-ზე">Order on Bolt
-                        Food</span>
+                <a href="https://food.bolt.eu/en-GE" target="_blank" class="platform">
+                    <span class="platform-name">Bolt Food</span>
+                    <span class="platform-arrow">↗</span>
                 </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ── Location ── -->
-        <section class="location">
-            <div class="location-card">
-                <div class="location-icon">📍</div>
-                <div class="location-info">
-                    <h2 data-en="Find Us" data-ka="სად ვართ">Find Us</h2>
-                    <p class="location-address" data-en="1 Vasil Petriashvili St, Tbilisi"
-                        data-ka="ვასილ პეტრიაშვილის ქ. 1, თბილისი">1 Vasil Petriashvili St, Tbilisi</p>
-                    <a href="https://maps.google.com/?q=Margaliti+Collection+Tbilisi" target="_blank"
-                        class="location-link" data-en="Open in Maps →" data-ka="გახსენი რუკაზე →">Open in Maps →</a>
-                </div>
-                <div class="location-divider"></div>
-                <div class="location-contact">
-                    <p class="contact-label" data-en="Call us" data-ka="დაგვიკავშირდი">Call us</p>
-                    <a href="tel:+995551246600" class="contact-phone">+995 551 246 600</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ── Footer ── -->
-        <footer class="footer">
-            <div class="social-links">
-                <a href="https://www.instagram.com/collectionmargaliti/" target="_blank" class="social-btn">
-                    <span class="social-icon">📸</span>
-                    <span data-en="Instagram" data-ka="ინსტაგრამი">Instagram</span>
+    <!-- VISIT + SOCIALS -->
+    <section class="visit">
+        <div class="visit-left">
+            <p class="section-label" data-en="Find Us" data-ka="სად ვართ">Find Us</p>
+            <h2 data-en="Visit the Bar" data-ka="მოგვინახულე">Visit the Bar</h2>
+            <address>
+                <p data-en="1 Vasil Petriashvili St" data-ka="ვასილ პეტრიაშვილის ქ. 1">1 Vasil Petriashvili St</p>
+                <p data-en="Tbilisi, Georgia" data-ka="თბილისი, საქართველო">Tbilisi, Georgia</p>
+            </address>
+            <a href="tel:+995551246600" class="visit-phone">+995 551 246 600</a>
+            <a href="https://maps.google.com/?q=Margaliti+Collection+Tbilisi" target="_blank" class="btn-outline dark"
+                data-en="Get Directions ↗" data-ka="მარშრუტი ↗">Get Directions ↗</a>
+        </div>
+        <div class="visit-right">
+            <div class="social-grid">
+                <a href="https://www.instagram.com/collectionmargaliti/" target="_blank" class="social-card"
+                    id="social-ig">
+                    <img src="img/post2.jpg" alt="Instagram">
+                    <img src="img/post3.jpg" alt="Instagram">
+                    <img src="img/post4.jpg" alt="Instagram">
+                    <img src="img/post1.jpg" alt="Instagram">
+                    <div class="social-card-label">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        <span>@collectionmargaliti</span>
+                    </div>
                 </a>
                 <a href="https://www.facebook.com/p/Margaliti-Collection-61573530448885/" target="_blank"
-                    class="social-btn">
-                    <span class="social-icon">👍</span>
-                    <span data-en="Facebook" data-ka="ფეისბუქი">Facebook</span>
+                    class="social-card social-card--fb">
+                    <img src="img/post4.jpg" alt="Facebook">
+                    <div class="social-card-label">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <span>Margaliti Collection</span>
+                    </div>
                 </a>
             </div>
-            <p class="footer-copy">
-                <span data-en="Built with 🧀 by" data-ka="შექმნილია 🧀-ით">Built with 🧀 by</span>
-                <a href="https://nuri.software" target="_blank" class="footer-nuri">Nuri</a>
-            </p>
-        </footer>
+        </div>
+    </section>
 
-    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">Margaliti</span>
+                <span class="footer-sub" data-en="Cheese Bar & More · Tbilisi" data-ka="ყველის ბარი · თბილისი">Cheese
+                    Bar & More · Tbilisi</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/collectionmargaliti/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/p/Margaliti-Collection-61573530448885/" target="_blank">Facebook</a>
+                <a href="https://wolt.com/en/geo/tbilisi/restaurant/margaliti-collection" target="_blank">Wolt</a>
+            </div>
+            <p class="footer-credit">
+                <span data-en="Built by" data-ka="შექმნა">Built by</span>
+                <a href="https://nuri.software" target="_blank">Nuri</a>
+            </p>
+        </div>
+    </footer>
 
     <script>
-        const langBtn = document.getElementById('lang-toggle');
+        // Language toggle
         const elements = document.querySelectorAll('[data-en]');
+        const langBtn = document.getElementById('lang-btn');
+        const langLabel = document.getElementById('lang-label');
+        let lang = localStorage.getItem('lang-mg') || 'en';
 
-        let currentLang = localStorage.getItem('lang-margaliti') || 'en';
-
-        function updateLanguage() {
-            langBtn.textContent = currentLang === 'en' ? '🇬🇪' : '🇺🇸';
+        function applyLang() {
             elements.forEach(el => {
-                el.textContent = el.getAttribute(`data-${currentLang}`);
+                const val = el.getAttribute('data-' + lang);
+                if (val) el.innerHTML = val;
             });
-            localStorage.setItem('lang-margaliti', currentLang);
+            langLabel.textContent = lang === 'en' ? 'KA' : 'EN';
+            langBtn.querySelector('.lang-flag').textContent = lang === 'en' ? '🇬🇪' : '🇺🇸';
+            localStorage.setItem('lang-mg', lang);
         }
+        langBtn.addEventListener('click', () => { lang = lang === 'en' ? 'ka' : 'en'; applyLang(); });
+        applyLang();
 
-        langBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'ka' : 'en';
-            updateLanguage();
-        });
+        // Custom cursor
+        const cursor = document.getElementById('cursor');
+        const dot = document.getElementById('cursor-dot');
+        let mx = 0, my = 0, cx = 0, cy = 0;
+        document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.transform = `translate(${mx}px,${my}px)`; });
+        function animCursor() { cx += (mx - cx) * 0.12; cy += (my - cy) * 0.12; cursor.style.transform = `translate(${cx}px,${cy}px)`; requestAnimationFrame(animCursor); }
+        animCursor();
+        document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => cursor.classList.add('hovered')); el.addEventListener('mouseleave', () => cursor.classList.remove('hovered')); });
 
-        updateLanguage();
+        // Sticky nav
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 80));
+
+        // Scroll reveal
+        const sr = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); sr.unobserve(e.target); } }), { threshold: 0.1 });
+        document.querySelectorAll('.story, .pick, .platform, .section-label, .visit-left, .social-card, h2').forEach(el => { el.classList.add('reveal'); sr.observe(el); });
+
+        // Hero image parallax
+        const heroImg = document.getElementById('hero-img');
+        window.addEventListener('scroll', () => { const s = window.scrollY; if (s < window.innerHeight) heroImg.style.transform = `translateY(${s * 0.3}px) scale(1.1)`; });
     </script>
-
 </body>
 
 </html>
