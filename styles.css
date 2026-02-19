@@ -447,8 +447,8 @@ a {
 }
 
 .order-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 14px;
 }
 
@@ -479,37 +479,17 @@ a {
     line-height: 1.3;
 }
 
+
 .order-btn--wolt {
     background: linear-gradient(135deg, #00A8BB 0%, #008FA0 100%);
     border-color: transparent;
     color: #fff;
+    min-width: 200px;
 }
 
 .order-btn--wolt:hover {
     background: linear-gradient(135deg, #00BACE, #00A8BB);
     box-shadow: 0 12px 36px rgba(0, 168, 187, 0.3);
-}
-
-.order-btn--glovo {
-    background: linear-gradient(135deg, #FFC244 0%, #F0A800 100%);
-    border-color: transparent;
-    color: #1a1200;
-}
-
-.order-btn--glovo:hover {
-    background: linear-gradient(135deg, #FFD066, #FFC244);
-    box-shadow: 0 12px 36px rgba(255, 194, 68, 0.35);
-}
-
-.order-btn--bolt {
-    background: linear-gradient(135deg, #34D186 0%, #20B86A 100%);
-    border-color: transparent;
-    color: #fff;
-}
-
-.order-btn--bolt:hover {
-    background: linear-gradient(135deg, #4AE89C, #34D186);
-    box-shadow: 0 12px 36px rgba(52, 209, 134, 0.3);
 }
 
 /* ── Location ── */
